@@ -14,7 +14,7 @@ A powerfull **Html Parser** coded in Python / Beatiful Soup library capabel to p
 
 <br />
 
-## CSS Convertor
+## CSS Converter
 
 This tool, inspired by [Tailwindo](https://github.com/awssat/tailwindo) aims to migrate Bootstrap themes to Bulma and Tailwind. The ideea is to find the corespondence between strauctures and replace the CSS properties. 
 
