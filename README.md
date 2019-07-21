@@ -1,10 +1,10 @@
 # [Developer tools](https://appseed.us/developer-tools)
 
-Usefull tools to automate the development. 
+Open-Source tools to automate the development. 
 
 <br />
 
-## [Html Parser](https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser))
+## [Html Parser](https://appseed.us/developer-tools/html-parser)
 
 A powerfull **Html Parser** coded in Python / Beatiful Soup library capable to parse flat HTML pages and extract components for various template engines: Pug, Jinja2, CodeIgniter and Laravel. A simple working flow: 
 
@@ -16,30 +16,24 @@ A powerfull **Html Parser** coded in Python / Beatiful Soup library capable to p
 
 <br />
 
-## CSS Converter
-
-Migrate Bootstrap legacy themes to Bulma CSS and Tailwind. 
-
-<br />
-
-### [Bootstrap to Bulma CSS](https://appseed.us/developer-tools/bootstrap-to-bulma-css)
+## [Bootstrap to Bulma CSS](https://appseed.us/developer-tools/bootstrap-to-bulma-css)
 
 Migrate <a href="https://getbootstrap.com/">Bootstrap</a> projects to <a href="https://bulma.io/">Bulma CSS</a>. 
 Read more about <a href="https://appseed.us/developer-tools/bootstrap-to-bulma-css">Bootstrap to Bulma CSS</a> tool developed by AppSeed.
 
 <br />
 
-### [Bootstrap to Tailwind CSS](https://appseed.us/developer-tools/bootstrap-to-tailwind-css)
+## [Bootstrap to Tailwind CSS](https://appseed.us/developer-tools/bootstrap-to-tailwind-css)
 
 Migrate <a href="https://getbootstrap.com/">Bootstrap</a> projects to <a href="https://tailwindcss.com/">Tailwind CSS</a>. 
 Read more about <a href="https://appseed.us/developer-tools/bootstrap-to-tailwind-css">Bootstrap to Tailwind CSS</a> tool developed by AppSeed.
 
 <br />
 
-## Support
+### Support
 
 For issues and features request, use **Github** or access the [support page](https://appseed.us/support) provided by **AppSeed** 
 
 <br />
 
-[Developer tools](https://en.wikipedia.org/wiki/Web_development_tools) provided by **AppSeed**
+[Developer tools](https://appseed.us/developer-tools) provided by **AppSeed**
