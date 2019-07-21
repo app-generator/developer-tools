@@ -1,4 +1,4 @@
-# [Developer tools](https://en.wikipedia.org/wiki/Web_development_tools)
+# [Developer tools](https://appseed.us/developer-tools)
 
 Usefull tools to automate the development. 
 
@@ -16,17 +16,17 @@ A powerfull **Html Parser** coded in Python / Beatiful Soup library capabel to p
 
 ## CSS Converter
 
-This tool, inspired by [Tailwindo](https://github.com/awssat/tailwindo) aims to migrate Bootstrap themes to Bulma and Tailwind. The ideea is to find the corespondence between strauctures and replace the CSS properties. 
+Migrate Bootstrap legacy themes to Bulma CSS and Tailwind. 
 
 <br />
 
-### [Bootstrap](https://getbootstrap.com/) to [Bulma CSS](https://bulma.io/)
+### [Bootstrap to Bulma CSS](https://appseed.us/developer-tools/bootstrap-to-bulma-css)
 
 @Todo
 
 <br />
 
-### [Bootstrap](https://getbootstrap.com/) to [Tailwind CSS](https://tailwindcss.com/)
+### [Bootstrap to Tailwind CSS](https://appseed.us/developer-tools/bootstrap-to-tailwind-css)
 
 @Todo 
 
