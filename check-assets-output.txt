@@ -1,0 +1,179 @@
+(env) PS > python.exe .\check-assets.py
+
+ Files (2)
+['apps-calendar.html', 'index.html']
+
+ ***** ***** *****
+
+ PROCESSING --> apps-calendar.html | files (1) remaining
+ PROCESSING --> index.html | files (0) remaining
+ PROCESSING --> apps-calendar.html
+ ERR - Missing Asset -> /static/assets/css/classic-horizontal/style-ERROR.css
+ ERR - Missing Asset -> /static/assets/images/logo-mini-ERROR.svg
+ PROCESSING --> index.html
+ ERR - Missing Asset -> /static/assets/images/favicon-ERROR.png
+    |
+    |
+    |
+    |
+    |- apps-calendar.html
+    |    |
+    |    |--- CSS: 6 file(s)
+    |    |     | /static/assets/vendors/mdi/css/materialdesignicons.min.css
+    |    |     | /static/assets/vendors/css/vendor.bundle.base.css
+    |    |     | /static/assets/vendors/fullcalendar/fullcalendar.min.css
+    |    |     | /static/assets/css/classic-horizontal/style.css
+    |    |     | /static/assets/css/classic-horizontal/style-ERROR.css
+    |    |     | /static/assets/images/favicon.png
+    |    |
+    |    |--- JS: 9 file(s)
+    |    |     | /static/assets/vendors/js/vendor.bundle.base.js
+    |    |     | /static/assets/vendors/moment/moment.min.js
+    |    |     | /static/assets/vendors/fullcalendar/fullcalendar.min.js
+    |    |     | /static/assets/js/off-canvas.js
+    |    |     | /static/assets/js/hoverable-collapse.js
+    |    |     | /static/assets/js/misc.js
+    |    |     | /static/assets/js/settings.js
+    |    |     | /static/assets/js/todolist.js
+    |    |     | /static/assets/js/calendar.js
+    |    |
+    |    |--- IMG: 7 file(s)
+    |    |     | /static/assets/images/logo.svg
+    |    |     | /static/assets/images/logo-mini.svg
+    |    |     | /static/assets/images/logo-mini-ERROR.svg
+    |    |     | /static/assets/images/faces/face4.jpg
+    |    |     | /static/assets/images/faces/face2.jpg
+    |    |     | /static/assets/images/faces/face3.jpg
+    |    |     | /static/assets/images/faces-clipart/pic-1.png
+    |    |
+    |    |--- Links: 68 (inner)
+    |    |     | ../../index.html
+    |    |     | ../../index.html
+    |    |     | ../../index.html
+    |    |     | ../../pages/widgets/widgets.html
+    |    |     | ../../pages/ui-features/accordions.html
+    |    |     | ../../pages/ui-features/buttons.html
+    |    |     | ../../pages/ui-features/badges.html
+    |    |     | ../../pages/ui-features/breadcrumbs.html
+    |    |     | ../../pages/ui-features/dropdowns.html
+    |    |     | ../../pages/ui-features/modals.html
+    |    |     | ../../pages/ui-features/progress.html
+    |    |     | ../../pages/ui-features/pagination.html
+    |    |     | ../../pages/ui-features/tabs.html
+    |    |     | ../../pages/ui-features/typography.html
+    |    |     | ../../pages/ui-features/dragula.html
+    |    |     | ../../pages/ui-features/carousel.html
+    |    |     | ../../pages/ui-features/clipboard.html
+    |    |     | ../../pages/ui-features/context-menu.html
+    |    |     | ../../pages/ui-features/loaders.html
+    |    |     | ../../pages/ui-features/slider.html
+    |    |     | ../../pages/ui-features/popups.html
+    |    |     | ../../pages/ui-features/notifications.html
+    |    |     | ../../pages/icons/flag-icons.html
+    |    |     | ../../pages/icons/mdi.html
+    |    |     | ../../pages/icons/font-awesome.html
+    |    |     | ../../pages/icons/simple-line-icon.html
+    |    |     | ../../pages/icons/themify.html
+    |    |     | ../../pages/forms/basic_elements.html
+    |    |     | ../../pages/forms/advanced_elements.html
+    |    |     | ../../pages/forms/validation.html
+    |    |     | ../../pages/forms/wizard.html
+    |    |     | ../../pages/forms/text_editor.html
+    |    |     | ../../pages/forms/code_editor.html
+    |    |     | ../../pages/charts/chartjs.html
+    |    |     | ../../pages/charts/morris.html
+    |    |     | ../../pages/charts/flot-chart.html
+    |    |     | ../../pages/charts/google-charts.html
+    |    |     | ../../pages/charts/sparkline.html
+    |    |     | ../../pages/charts/c3.html
+    |    |     | ../../pages/charts/chartist.html
+    |    |     | ../../pages/charts/justGage.html
+    |    |     | ../../pages/tables/basic-table.html
+    |    |     | ../../pages/tables/data-table.html
+    |    |     | ../../pages/tables/js-grid.html
+    |    |     | ../../pages/tables/sortable-table.html
+    |    |     | ../../pages/maps/mapael.html
+    |    |     | ../../pages/maps/vector-map.html
+    |    |     | ../../pages/maps/google-maps.html
+    |    |     | ../../pages/samples/login.html
+    |    |     | ../../pages/samples/login-2.html
+    |    |     | ../../pages/samples/register.html
+    |    |     | ../../pages/samples/register-2.html
+    |    |     | ../../pages/samples/lock-screen.html
+    |    |     | ../../pages/samples/error-404.html
+    |    |     | ../../pages/samples/error-500.html
+    |    |     | ../../pages/samples/invoice.html
+    |    |     | ../../pages/samples/pricing-table.html
+    |    |     | ../../pages/samples/orders.html
+    |    |     | ../../pages/samples/search-results.html
+    |    |     | ../../pages/samples/profile.html
+    |    |     | ../../pages/samples/timeline.html
+    |    |     | ../../pages/samples/news-grid.html
+    |    |     | ../../pages/samples/portfolio.html
+    |    |     | ../../pages/samples/faq.html
+    |    |     | ../../pages/apps/email.html
+    |    |     | ../../pages/apps/calendar.html
+    |    |     | ../../pages/apps/todo.html
+    |    |     | ../../pages/apps/gallery.html
+    |    |
+    |    |--- Errors: 2
+    |    |     | /static/assets/css/classic-horizontal/style-ERROR.css
+    |    |     | /static/assets/images/logo-mini-ERROR.svg
+    |
+    |
+    |- index.html
+    |    |
+    |    |--- CSS: 7 file(s)
+    |    |     | /static/assets/vendors/mdi/css/materialdesignicons.min.css
+    |    |     | /static/assets/vendors/css/vendor.bundle.base.css
+    |    |     | /static/assets/vendors/jvectormap/jquery-jvectormap.css
+    |    |     | /static/assets/vendors/flag-icon-css/css/flag-icon.min.css
+    |    |     | /static/assets/css/classic-horizontal/style.css
+    |    |     | /static/assets/images/favicon.png
+    |    |     | /static/assets/images/favicon-ERROR.png
+    |    |
+    |    |--- JS: 10 file(s)
+    |    |     | /static/assets/vendors/js/vendor.bundle.base.js
+    |    |     | /static/assets/vendors/progressbar.js/progressbar.min.js
+    |    |     | /static/assets/vendors/jvectormap/jquery-jvectormap.min.js
+    |    |     | /static/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js
+    |    |     | /static/assets/js/off-canvas.js
+    |    |     | /static/assets/js/hoverable-collapse.js
+    |    |     | /static/assets/js/misc.js
+    |    |     | /static/assets/js/settings.js
+    |    |     | /static/assets/js/todolist.js
+    |    |     | /static/assets/js/dashboard.js
+    |    |
+    |    |--- IMG: 15 file(s)
+    |    |     | /static/assets/images/logo.svg
+    |    |     | /static/assets/images/logo-mini.svg
+    |    |     | /static/assets/images/faces/face4.jpg
+    |    |     | /static/assets/images/faces/face2.jpg
+    |    |     | /static/assets/images/faces/face3.jpg
+    |    |     | /static/assets/images/faces-clipart/pic-1.png
+    |    |     | /static/assets/images/faces/face1.jpg
+    |    |     | /static/assets/images/faces/face2.jpg
+    |    |     | /static/assets/images/faces/face5.jpg
+    |    |     | /static/assets/images/faces/face3.jpg
+    |    |     | /static/assets/images/faces/face4.jpg
+    |    |     | /static/assets/images/faces/face6.jpg
+    |    |     | /static/assets/images/faces/face8.jpg
+    |    |     | /static/assets/images/faces/face9.jpg
+    |    |     | /static/assets/images/faces/face11.jpg
+    |    |
+    |    |--- Links: 0 (inner)
+    |    |
+    |    |--- Errors: 1
+    |    |     | /static/assets/images/favicon-ERROR.png
+
+
+
+Pages with errors: 2
+    |
+    |- apps-calendar.html
+    |    |     | /static/assets/css/classic-horizontal/style-ERROR.css
+    |    |     | /static/assets/images/logo-mini-ERROR.svg
+    |
+    |- index.html
+    |    |     | /static/assets/images/favicon-ERROR.png
+

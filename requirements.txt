@@ -1,0 +1,5 @@
+htmlmin
+bs4
+pillow
+prettytable
+selenium

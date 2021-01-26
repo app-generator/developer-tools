@@ -1,6 +1,86 @@
 # [Developer tools](https://appseed.us/developer-tools)
 
-Open-Source tools to automate the development. 
+Open-Source devtools provided by AppSeed under [EULA License](./LICENSE.md).
+
+<br />
+
+## Install Deps
+
+```bash
+$ # Virtualenv modules installation (Unix based systems)
+$ virtualenv env
+$ source env/bin/activate
+$
+$ # Virtualenv modules installation (Windows based systems)
+$ # virtualenv env
+$ # .\env\Scripts\activate
+$
+$ # Install requirements
+$ pip3 install -r requirements.txt
+```
+
+<br />
+
+## Check Assets
+
+> Scan a design/ui kit for missing assets - Status WIP
+
+<br />
+
+**Usage**
+
+```bash
+$ python ./check-assets.py
+```
+
+<br />
+
+**Sample Output** - [log file](./python ./check-assets.py)
+
+```bash
+(env) PS > python.exe .\check-assets.py
+
+ Files (2)
+['apps-calendar.html', 'index.html']
+
+ ***** ***** *****
+
+ PROCESSING --> apps-calendar.html | files (1) remaining
+ PROCESSING --> index.html | files (0) remaining
+ PROCESSING --> apps-calendar.html
+ ERR - Missing Asset -> /static/assets/css/classic-horizontal/style-ERROR.css
+ ERR - Missing Asset -> /static/assets/images/logo-mini-ERROR.svg
+ PROCESSING --> index.html
+ ERR - Missing Asset -> /static/assets/images/favicon-ERROR.png
+    |
+    |
+    |
+    |
+    |- apps-calendar.html
+    |    |
+    |    |--- CSS: 6 file(s)
+    |    |     | /static/assets/vendors/mdi/css/materialdesignicons.min.css
+    |    |     | /static/assets/vendors/css/vendor.bundle.base.css
+    |    |     | /static/assets/vendors/fullcalendar/fullcalendar.min.css
+    |    |     | /static/assets/css/classic-horizontal/style.css
+    |    |     | /static/assets/css/classic-horizontal/style-ERROR.css
+    |    |     | /static/assets/images/favicon.png
+
+...
+...
+...
+
+
+
+Pages with errors: 2
+    |
+    |- apps-calendar.html
+    |    |     | /static/assets/css/classic-horizontal/style-ERROR.css
+    |    |     | /static/assets/images/logo-mini-ERROR.svg
+    |
+    |- index.html
+    |    |     | /static/assets/images/favicon-ERROR.png
+```
 
 <br />
 
