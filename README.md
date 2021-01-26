@@ -35,7 +35,7 @@ $ python ./check-assets.py
 
 <br />
 
-**Sample Output** - [log file](./python ./check-assets.py)
+**Sample Output** - [log file](./check-assets-output.txt)
 
 ```bash
 (env) PS > python.exe .\check-assets.py
