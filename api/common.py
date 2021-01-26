@@ -135,3 +135,22 @@ class BS_TAG:
 
         return ret
 
+class TMPL:
+
+    def __init__(self, aFile=''):
+
+        self.file      = aFile
+        self.title     = ''
+        self.css       = []
+        self.js        = []
+        self.img       = []
+        self.links     = []
+
+        self.all_files = [] # used to fix the file internal links
+        self.err       = [] # used to report missing assets
+        self.err_links = [] # used to report missing assets
+
+    def __repr__(self):
+
+        errors = len( self.err) + len( self.err_links) 
+        return "" + self.file + ' | css=' + str(len( self.css )) + ' / js=' + str(len( self.js )) + ' / img=' + str(len( self.img )) + ' - ('+str(errors)+') ERRORS'

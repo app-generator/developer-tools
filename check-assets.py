@@ -22,51 +22,26 @@ from os import walk
 import sys, htmlmin
 from bs4 import BeautifulSoup as bs, NavigableString, Tag, ResultSet, Comment
 
-from api.common import COMMON, ASSETS_MAP
-from api.util   import file_load, file_exists, get_files
+from api.common import COMMON, ASSETS_MAP, BS_TAG, TMPL
+from api.util   import file_load, file_exists, get_files, get_tail
 from api.parser import node_info
 
 FILES_LIST        = []
 FILES_MAP         = {}
 FILES_WITH_ERRORS = []
 
-class TMPL:
-
-    def __init__(self, aFile=''):
-
-        self.file      = aFile
-        self.title     = ''
-        self.css       = []
-        self.js        = []
-        self.img       = []
-        self.links     = []
-
-        self.all_files = [] # used to fix the file internal links
-        self.err       = [] # used to report missing assets
-
-    def __repr__(self):
-        return "TMPL() - " + self.file + ' css=' + str(len( self.css )) + ' / js=' + str(len( self.js )) + ' / img=' + str(len( self.img )) 
-
-    def check_assets(self):
-
-        self.err    = []
-
-        print (' PROCESSING --> ' + self.file )
-
-        for f in self.css:
-            if not file_exists( DIR_ASSETS + f ) and ( f not in self.err ) and ( len( f ) > 0 ):
-                print( ' ERR - Missing Asset -> ' + f )
-                self.err.append( f )
-
-        for f in self.js:
-            if not file_exists( DIR_ASSETS + f ) and ( f not in self.err ) and ( len( f ) > 0 ):
-                print( ' ERR - Missing Asset -> ' + f )
-                self.err.append( f )
-
-        for f in self.img:
-            if not file_exists( DIR_ASSETS + f ) and ( f not in self.err ) and ( len( f ) > 0 ):
-                print( ' ERR - Missing Asset -> ' + f )
-                self.err.append( f )
+# Initialized with all files manually renamed  
+INNER_LINKS = {
+    'error-404.html'      : 'page-404.html',
+    'error-500.html'      : 'page-500.html',
+    'flag-icons.html'     : 'icons-flag.html',
+    'basic-table.html'    : 'table-basic.html',
+    'data-table.html'     : 'table-data.html',
+    'sortable-table.html' : 'table-sortable.html',
+    'vector-map.html'     : 'maps-vector.html',
+    'google-maps.html'    : 'maps-google.html',
+    'lock-screen.html'    : 'page-lock.html'
+}
 
 def get_bs( aFile ):
 
@@ -173,10 +148,61 @@ def check_assets( aFileMap ):
     idx = 0
     for f in aFileMap:
 
-        aFileMap[ f ].check_assets()
+        # extract the current template
+        tmpl = aFileMap[ f ]
+
+        # reset errors counter    
+        tmpl.err = []
+
+        print (' PROCESSING --> ' + tmpl.file )
+
+        for css_file in tmpl.css:
+            if not file_exists( DIR_ASSETS + css_file ) and ( css_file not in tmpl.err ) and ( len( css_file ) > 0 ):
+                print( '\t ERR - Missing Asset -> ' + css_file )
+                tmpl.err.append( css_file )
+
+        for js_file in tmpl.js:
+            if not file_exists( DIR_ASSETS + js_file ) and ( js_file not in tmpl.err ) and ( len( js_file ) > 0 ):
+                print( '\t ERR - Missing Asset -> ' + js_file )
+                tmpl.err.append( js_file )
+
+        for img_file in tmpl.img:
+            if not file_exists( DIR_ASSETS + img_file ) and ( img_file not in tmpl.err ) and ( len( img_file ) > 0 ):
+                print( '\t  ERR - Missing Asset -> ' + img_file )
+                tmpl.err.append( img_file )
+
+        for link in tmpl.links:
+
+            # Extract the file from full path:
+            # ../whatever/index.html
+            # ../../../aaa.html
+            l_file = get_tail( link )
+
+            # print( ' Search the inner link for ' + l_file ) 
+
+            if l_file in INNER_LINKS.keys():
+
+               #print( ' LINK: ' + l_file + ' -> ' + INNER_LINKS[ l_file ] )
+               continue
+
+            for link_file in aFileMap:
+
+                if link_file.endswith(l_file):
+
+                    # Save in map
+                    INNER_LINKS[ l_file ] = link_file
+
+                    print( ' LINK: ' + l_file + ' -> ' + INNER_LINKS[ l_file ] )
+                    continue
+
+            print( '\t ERR - Missing Inner Link -> ' + l_file )
+            tmpl.err_links.append( l_file )
+
+        # Update the template
+        aFileMap[ f ] = tmpl
 
         # We have errors    
-        if len ( aFileMap[ f ].err ) > 0 :
+        if ( len ( aFileMap[ f ].err ) > 0 ) or ( len ( aFileMap[ f ].err_links ) > 0 ) :
             
             FILES_WITH_ERRORS.append( f )
 
@@ -201,45 +227,12 @@ if __name__ == "__main__":
     # print ( FILES_MAP )
 
     print('    | ' )
-    print('    | ' )
 
     for k in FILES_MAP:
         
         f = FILES_MAP[k]
 
-        print('    |  ' )
-        print('    |  ' )
-        print('    |- ' + f.file )
-        print('    |    |')
-        print('    |    |--- CSS: ' + str( len(f.css) ) + ' file(s)' )
-
-        for i in f.css:
-            print('    |    |     | ' + str( i ) )
-
-        print('    |    |')
-        print('    |    |--- JS: ' + str( len(f.js) ) + ' file(s)' )
-
-        for i in f.js:
-            print('    |    |     | ' + str( i ) )
-
-        print('    |    |')
-        print('    |    |--- IMG: ' + str( len(f.img) ) + ' file(s)' )
-
-        for i in f.img:
-            print('    |    |     | ' + str( i ) )
-
-        print('    |    |')
-        print('    |    |--- Links: ' + str( len(f.links) ) + ' (inner)' )
-
-        for i in f.links:
-            print('    |    |     | ' + str( i ) )
-
-        print('    |    |')
-        print('    |    |--- Errors: ' + str( len(f.err) ) )
-
-        for i in f.err:
-            print('    |    |     | ' + str( i ) )
-
+        print('    |- ' + str( f ) )
 
     print ('\n\n')
     print ( 'Pages with errors: ' + str( len( FILES_WITH_ERRORS ) ) )
@@ -250,7 +243,14 @@ if __name__ == "__main__":
         print('    |  ' )
         print('    |- ' + f.file )
 
-        for i in f.err:
-            print('    |    |     | ' + str( i ) )
+        if len ( f.err ) > 0: 
+
+            for i in f.err:
+                print('    |   | - asset -' + str( i ) )
+
+        if len ( f.err_links ) > 0: 
+
+            for i in f.err:
+                print('    |   | - link -' + str( i ) )
 
     print ('\n\n')            

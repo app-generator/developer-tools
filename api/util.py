@@ -280,3 +280,7 @@ def get_files( aPath ):
         break
 
     return FILES_LIST
+
+def get_tail( aPath ):
+    head, tail = os.path.split( aPath )
+    return tail
