@@ -116,4 +116,5 @@ For issues and features request, use **Github** or access the [support page](htt
 
 <br />
 
+---
 [Developer tools](https://appseed.us/developer-tools) provided by **AppSeed**
