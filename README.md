@@ -12,13 +12,13 @@ A collection with **[tools](https://appseed.us/developer-tools/)** (`open-source
 
 > `Closed-Source` Tools, **Free for AppSeed [PRO Users](https://appseed.us/terms/)**
 
-- 👉 [OpenAPI Editor](https://appseed.us/generator/openapi/): In-Browser editor (built with Vue.js)
-- 👉 [OpenAPI Parser](https://github.com/app-generator/devtool-openapi-parser): Python tool that extracts OpenAPI definitions
-- 👉 [DevTool UI Tester](https://github.com/app-generator/devtool-ui-tester): Test the compilation across multiple environments for React Projects 
-- 👉 [Django Dynamic API](https://appseed.us/developer-tools/django-dynamic-api/): code secure APIs using DRF with a minimum effort
-- 👉 [Django Dynamic DataTables](https://appseed.us/developer-tools/django-dynamic-datatables/): code powerful 
-- 👉 [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb): 
-- 👉 [Flask Dynamic API](https://github.com/app-generator/devtool-flask-dynamic-api): 
+- 🚀 [OpenAPI Editor](https://appseed.us/generator/openapi/): In-Browser editor (built with Vue.js)
+- 🚀 [OpenAPI Parser](https://github.com/app-generator/devtool-openapi-parser): Python tool that extracts OpenAPI definitions
+- 🚀 [DevTool UI Tester](https://github.com/app-generator/devtool-ui-tester): Test the compilation across multiple environments for React Projects 
+- 🚀 [Django Dynamic API](https://appseed.us/developer-tools/django-dynamic-api/): code secure APIs using `DRF` with a minimum effort
+- 🚀 [Django Dynamic DataTables](https://appseed.us/developer-tools/django-dynamic-datatables/): server-side paginated data, search, export PDF, CVS  
+- 🚀 [Flask Dynamic API](https://github.com/app-generator/devtool-flask-dynamic-api): code secure APIs using `Flask-RestX` with a minimum effort
+- 🚀 [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb): server-side paginated data, search, export PDF, CVS  
 
 <br />
 
@@ -82,7 +82,7 @@ Starter project that uses an OpenAPI specifications to bind a NodeJs Express bac
 
 <br />
 
-## ✨ [OpenAPI Editor](https://appseed.us/generator/openapi/)
+## 🚀 [OpenAPI Editor](https://appseed.us/generator/openapi/)
 
 In-Browser Developers Tool - Edit your OpenAPI definition directly in browser and download the generated JSON file. For newcomers, **OpenAPI** is an open-source format for designing `RESTful APIs` and `web services` that serves as a single source of truth for all parties involved in the software development process: developers, testers.
 
@@ -101,7 +101,7 @@ This free service/tools can be used to edit and generate unlimited OpenAPI defin
 
 <br />
 
-## ✨ [OpenAPI Parser](https://github.com/app-generator/devtool-openapi-parser)
+## 🚀 [OpenAPI Parser](https://github.com/app-generator/devtool-openapi-parser)
 
 Tool to extract relevant information from an OpenAPI descriptor. The information can be used to generate code (helpers, business logic or a database schema). 
 
@@ -110,7 +110,7 @@ Tool to extract relevant information from an OpenAPI descriptor. The information
 
 <br />
 
-## ✨ [DevTool UI Tester](https://github.com/app-generator/devtool-ui-tester) 
+## 🚀 [DevTool UI Tester](https://github.com/app-generator/devtool-ui-tester) 
 
 This [tool](https://appseed.us/developer-tools/) provides a simple way to ensure compatibilty of a React project accross different Node environments and tools (NPM, Yarn). 
 
@@ -126,7 +126,7 @@ This [tool](https://appseed.us/developer-tools/) provides a simple way to ensure
 
 <br />
 
-## ✨ [Django Dynamic API](https://appseed.us/developer-tools/django-dynamic-api/) 
+## 🚀 [Django Dynamic API](https://appseed.us/developer-tools/django-dynamic-api/) 
 
 This tool aims to provide a secure, `production-ready API via DRF` (Django REST Framework) using the developer's minimum amount of code. 
 
@@ -151,7 +151,7 @@ This tool aims to provide a secure, `production-ready API via DRF` (Django REST 
 
 <br />
 
-## ✨ [Django Dynamic DataTables](https://appseed.us/developer-tools/django-dynamic-datatables/) 
+## 🚀 [Django Dynamic DataTables](https://appseed.us/developer-tools/django-dynamic-datatables/) 
 
 The tool aims to provide a powerful data table interface using the developer's minimum amount of code. 
 
@@ -176,7 +176,7 @@ The tool aims to provide a powerful data table interface using the developer's m
 
 <br />
 
-## ✨ [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb) 
+## 🚀 [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb) 
 
 The tool aims to provide a powerful data table interface using the developer's minimum amount of code. 
 
@@ -201,7 +201,7 @@ The tool aims to provide a powerful data table interface using the developer's m
 
 <br />
 
-## ✨ [Flask Dynamic API](https://github.com/app-generator/devtool-flask-dynamic-api)
+## 🚀 [Flask Dynamic API](https://github.com/app-generator/devtool-flask-dynamic-api)
 
 This tool aims to provide a secure, `production-ready API via Flask-RestX` using the developer's minimum amount of code. 
 
