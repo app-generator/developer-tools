@@ -22,7 +22,7 @@ A collection with **[tools](https://appseed.us/developer-tools/)** (`open-source
 
 <br />
 
-## ✨ [Database Introspection Tool](https://github.com/app-generator/devtool-db-introspection) `free tool`
+## ✨ [DB Introspection Tool](https://github.com/app-generator/devtool-db-introspection) `free tool`
 
 `Open-Source` **[developers tool](https://appseed.us/developer-tools/)** that provides simple helpers for legacy databases introspection. Crafted on top of `Python` and [Peewee](http://docs.peewee-orm.com/en/latest/).
 
