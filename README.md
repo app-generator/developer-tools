@@ -1,6 +1,6 @@
 # [Tools for Developers](https://appseed.us/developer-tools/)
 
-A collection with **[tools](https://appseed.us/developer-tools/)** (`open-source` and `closed-source`) built and actively supported by **AppSeed**.  
+A collection of **[tools](https://appseed.us/developer-tools/)** (`open-source` and `closed-source`) built and actively supported by **AppSeed**.  
 
 > `FREE` Tools (MIT license)
 
