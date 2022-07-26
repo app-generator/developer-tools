@@ -176,31 +176,6 @@ The tool aims to provide a powerful data table interface using the developer's m
 
 <br />
 
-## 🚀 [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb) 
-
-The tool aims to provide a powerful data table interface using the developer's minimum amount of code. 
-
-> How it works
-
-- `Define a new model` in the project (an old one can be also used)
-- `Execute the database migration` to create/update the associated tables
-- `Update the configuration` to enable the Dynamic Data Table service over the model
-- `Start` the app
-- Access the `Dynamic DataTable` provided on op of the model
-
-> Development status
-
-| Status | Item | info | 
-| --- | --- | --- |
-| ✅ | New Models Definition in `apps/models` | - |
-| ✅ | The app is saved in `apps/dyn_datatables` | - |
-| ✅ | Models enabled in `apps/config.py` via `DYNAMIC_DATATB` variable | - |
-| ✅ | The project exposes automaticaly a view powered by `Simple-DataTables` JS Library | - |
-| ✅ | Path of the service: `/datatb/products/` | In case the new model is `Products` | - | 
-| ✅ | The page exposes the controls: `Items per page`, `Search`, `Server Side Pagination`  | - |
-
-<br />
-
 ## 🚀 [Flask Dynamic API](https://github.com/app-generator/devtool-flask-dynamic-api)
 
 This tool aims to provide a secure, `production-ready API via Flask-RestX` using the developer's minimum amount of code. 
@@ -223,6 +198,31 @@ This tool aims to provide a secure, `production-ready API via Flask-RestX` using
 | ✅ | The project exposes automatically a CRUD API over the new model | - |
 | ✅ | Path of the service: `/api/products/` | In case the new model is `Products` | 
 | ✅ | The API is powered via DRF using best practices | - | 
+
+<br />
+
+## 🚀 [Flask Dynamic DataTables](https://github.com/app-generator/devtool-flask-dynamic-datatb) 
+
+The tool aims to provide a powerful data table interface using the developer's minimum amount of code. 
+
+> How it works
+
+- `Define a new model` in the project (an old one can be also used)
+- `Execute the database migration` to create/update the associated tables
+- `Update the configuration` to enable the Dynamic Data Table service over the model
+- `Start` the app
+- Access the `Dynamic DataTable` provided on op of the model
+
+> Development status
+
+| Status | Item | info | 
+| --- | --- | --- |
+| ✅ | New Models Definition in `apps/models` | - |
+| ✅ | The app is saved in `apps/dyn_datatables` | - |
+| ✅ | Models enabled in `apps/config.py` via `DYNAMIC_DATATB` variable | - |
+| ✅ | The project exposes automaticaly a view powered by `Simple-DataTables` JS Library | - |
+| ✅ | Path of the service: `/datatb/products/` | In case the new model is `Products` | - | 
+| ✅ | The page exposes the controls: `Items per page`, `Search`, `Server Side Pagination`  | - |
 
 <br />
 
