@@ -10,7 +10,7 @@ A collection with **[tools](https://appseed.us/developer-tools/)** (`open-source
 
 <br />
 
-> `Closed-Source` Tools, **Free for AppSeed [PRO Users](https://appseed.us/terms/)**
+> `Closed-Source` Tools - **Free for AppSeed [PRO Users](https://appseed.us/terms/)**
 
 - 🚀 [OpenAPI Editor](https://appseed.us/generator/openapi/): In-Browser editor (built with Vue.js)
 - 🚀 [OpenAPI Parser](https://github.com/app-generator/devtool-openapi-parser): Python tool that extracts OpenAPI definitions
